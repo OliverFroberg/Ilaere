@@ -22,7 +22,7 @@ export default function RootLayout({children}: Readonly<{ children: React.ReactN
 	return (
 		<html lang="da">
 			<body className={`${openSans.variable} ${openSans.className} antialiased main_page__background`}>
-				<header className={"sticky top-0 z-50"}>
+				<header className={"sticky top-0 z-50 wrapper"}>
 					<nav className={"flex gap-4 justify-between items-center p-4"}>
 						<a href="/" className={"w-full max-w-100 shadow-lg hover:shadow-xl hover:scale-105 transition"}><img src="/ilaere.dk-logo.png" alt="ilære.dk logo"/></a>
 						<Card>
