@@ -1,15 +1,11 @@
 import type {Metadata} from "next"
-import {Geist, Geist_Mono} from "next/font/google"
-import "./globals.css"
+import "@/style/globals.css"
 import React from "react"
+import {Open_Sans} from "next/font/google"
+import Card from "@/component/card"
 
-const geistSans = Geist({
-	variable: "--font-geist-sans",
-	subsets: ["latin"],
-})
-
-const geistMono = Geist_Mono({
-	variable: "--font-geist-mono",
+const openSans = Open_Sans({
+	variable: "--font-open-sans",
 	subsets: ["latin"],
 })
 
@@ -19,10 +15,31 @@ export const metadata: Metadata = {
 }
 
 export default function RootLayout({children}: Readonly<{ children: React.ReactNode }>) {
+	const NavButtons = ({href, text}: {href: string, text: string}) => (
+		<li><a href={href} className={"hover:bg-black/5 hover:shadow-lg p-2 rounded-2xl underline underline-offset-2 transition"}>{text}</a></li>
+	)
+
 	return (
 		<html lang="da">
-			<body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+			<body className={`${openSans.variable} ${openSans.className} antialiased main_page__background`}>
+				<header className={"sticky top-0 z-50"}>
+					<nav className={"flex gap-4 justify-between items-center p-4"}>
+						<a href="/" className={"w-full max-w-100 shadow-lg hover:shadow-xl hover:scale-105 transition"}><img src="/ilaere.dk-logo.png" alt="ilære.dk logo"/></a>
+						<Card>
+							<ul className={"hidden xl:flex gap-2 justify-center items-center h-full p-6 whitespace-nowrap"}>
+								<NavButtons href={"#"} text={"Mød virksomhederne"}/>
+								<NavButtons href={"#"} text={"Erhvervsuddannelser"}/>
+								<NavButtons href={"#"} text={"Info"}/>
+								<NavButtons href={"#"} text={"Kontakt"}/>
+								<NavButtons href={"#"} text={"Bliv en del af ilære.dk"}/>
+							</ul>
+						</Card>
+					</nav>
+				</header>
 				{children}
+				<footer>
+
+				</footer>
 			</body>
 		</html>
 	)
