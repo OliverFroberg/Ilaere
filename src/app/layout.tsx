@@ -59,7 +59,7 @@ export default function RootLayout({children}: Readonly<{ children: React.ReactN
 								lavet et projekt om vejen
 								til Erhvervsuddannelse:
 							</h4></li>
-							<li><Link className={"hover:underline cursor-pointer"} href={"#"}>Klik her for at besøge "Vejen til EUD"</Link></li>
+							<li><Link className={"hover:underline cursor-pointer"} href={"#"}>Klik her for at besøge &quot;Vejen til EUD&quot;</Link></li>
 						</ul>
 
 						<ul className={"flex flex-col gap-2"}>
