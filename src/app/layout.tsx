@@ -3,6 +3,7 @@ import "@/style/globals.css"
 import React from "react"
 import {Open_Sans} from "next/font/google"
 import Card from "@/component/card"
+import "@/style/gradient.css"
 
 const openSans = Open_Sans({
 	variable: "--font-open-sans",

@@ -39,7 +39,7 @@ export default function Home() {
 
       {/* Flere Virksomheder */}
 
-      <div className="container m-auto w-auto h-auto flex flex-wrap justify-center">
+      <div className="container m-auto w-auto h-auto flex flex-wrap justify-center ">
 
       <div><h2>Flere Virksomheder</h2>
       </div>
@@ -51,19 +51,24 @@ export default function Home() {
 
 
       {/* video */}
-      <div className="container m-auto w-auto h-auto bg-red-400 grid-cols-2 grid-rows-2">
+      <div className="container m-auto w-auto h-auto  grid grid-cols-2 justify-center items-center">
       
-      <iframe className="row-start-1" src="https://player.vimeo.com/video/1086696953?h=08d3c4e9cf&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"  allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerPolicy="strict-origin-when-cross-origin" title="Det er fedt at tag en erhvervsuddannelse"></iframe>
-      <section className="row-start-2 col-start-1 self-center">
+      <iframe className="row-span-2 col-start-1 w-full h-full m-r-auto " src="https://player.vimeo.com/video/1086696953?h=08d3c4e9cf&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"  allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerPolicy="strict-origin-when-cross-origin" title="Det er fedt at tag en erhvervsuddannelse"></iframe>
+      <section className="row-start-1 col-start-2 m-2 text-center border  gradient-one justify-center items-center flex flex-col p-4 rounded-base  h-[50px] text-black font-bold">
         <p>Praktik- og lærepladser på Djursland</p>
       </section>
-      <article className="row-start-2 col-start-2 self-center">
-        <p>ilære.dk er skabt i samarbejde mellem folkeskoler, erhvervsskoler og virksomheder for at fremme interessen for erhvervsrettede uddannelser for folkeskoleelever i 7., 8. og 9.klasse.
+      <article className="row-start-2 col-start-2 m-2 text-center bg-amber-600 rounded-base text-white p-4 h-auto ">
+        <p className="text-[14px]">ilære.dk er skabt i samarbejde mellem folkeskoler, erhvervsskoler og virksomheder for at fremme interessen for erhvervsrettede uddannelser for folkeskoleelever i 7., 8. og 9.klasse.
           Hvis du har svært ved at finde ud af, hvilket arbejde eller fag der kunne være spændende for dig, så prøv at kigge her på hjemmesiden.</p>
       </article>
+     </div>
 
+     <div className=" rounded-b-full flex flex-wrap h-48 w-full gradient-three justify-center">
 
      </div>
+
+
+
        
       </div>
    </main>
