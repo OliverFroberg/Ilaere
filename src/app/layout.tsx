@@ -33,9 +33,39 @@ export default function RootLayout({children}: Readonly<{ children: React.ReactN
 				<header className={"sticky top-0 z-50 wrapper"}>
 					<Navigation/>
 				</header>
-				{children}
-				<footer>
 
+				{children}
+
+				<footer className={"bg-stone-900 text-white"}>
+					<div className={"wrapper grid grid-cols-4 justify-between gap-10"}>
+						<ul className={"list-disc flex flex-col gap-2"}>
+							<li className={"list-none"}><h4 className={"text-2xl text-orange"}>Tag på opdagelse:</h4></li>
+							<li><a className={"hover:underline cursor-pointer"}>Jobkompasset</a></li>
+							<li><a className={"hover:underline cursor-pointer"}>Lærepladsen.dk</a></li>
+							<li><a className={"hover:underline cursor-pointer"}>UddannelsesGuiden</a></li>
+						</ul>
+
+						<ul className={"list-disc flex flex-col gap-2"}>
+							<li className={"list-none"}><h4 className={"text-2xl text-orange"}>Links:</h4></li>
+							<li><a className={"hover:underline cursor-pointer"}>LinkedIn</a></li>
+							<li><a className={"hover:underline cursor-pointer"}>Cookiepolitik</a></li>
+						</ul>
+
+						<ul className={"flex flex-col gap-2"}>
+							<li><h4 className={"text-orange"}>
+								Erhvervsskolernes
+								Elevorganisation har
+								lavet et projekt om vejen
+								til Erhvervsuddannelse:
+							</h4></li>
+							<li><a className={"hover:underline cursor-pointer"}>Klik her for at besøge "Vejen til EUD"</a></li>
+						</ul>
+
+						<ul className={"flex flex-col gap-2"}>
+							<li><p>En del af:</p></li>
+							<li><img src={"/business-djursland-logo-hvid.png"} alt={"Business Djursland"}/></li>
+						</ul>
+					</div>
 				</footer>
 			</body>
 		</html>

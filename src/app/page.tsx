@@ -46,7 +46,10 @@ export default function Home() {
 				</div>
 			</section>
 
-			{/* TODO: Slider */}
+			{/* Slider */}
+			<section className="m-auto py-50 w-full">
+				<h3 className={"text-center text-6xl"}>Slider vil have været here</h3>
+			</section>
 
 			{/* video */}
 			<section className="m-auto flex flex-col-reverse tablet:grid grid-cols-2 gap-10 w-full">
