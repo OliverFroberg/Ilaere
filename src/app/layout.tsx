@@ -1,13 +1,24 @@
 import type {Metadata} from "next"
 import "@/style/globals.css"
 import React from "react"
-import {Open_Sans} from "next/font/google"
+import {Abril_Fatface, DM_Sans, Open_Sans} from "next/font/google"
 import Card from "@/component/card"
 import "@/style/gradient.css"
 
 const openSans = Open_Sans({
 	variable: "--font-open-sans",
 	subsets: ["latin"],
+})
+
+const fatFace = Abril_Fatface({
+	variable: "--font-abril-fatface",
+	subsets: ["latin"],
+	weight: "400"
+})
+
+const dmSans = DM_Sans({
+	variable: "--font-dm-sans",
+	subsets: ["latin"]
 })
 
 export const metadata: Metadata = {
@@ -22,7 +33,7 @@ export default function RootLayout({children}: Readonly<{ children: React.ReactN
 
 	return (
 		<html lang="da">
-			<body className={`${openSans.variable} ${openSans.className} antialiased main_page__background`}>
+			<body className={`${openSans.variable} ${openSans.className} ${fatFace.variable} ${dmSans.variable} antialiased main_page__background`}>
 				<header className={"sticky top-0 z-50 wrapper"}>
 					<nav className={"flex gap-4 justify-between items-center p-4"}>
 						<a href="/" className={"w-full max-w-100 shadow-lg hover:shadow-xl hover:scale-105 transition"}><img src="/ilaere.dk-logo.png" alt="ilære.dk logo"/></a>
