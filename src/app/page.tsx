@@ -63,7 +63,13 @@ export default function Home() {
       </article>
      </div>
 
-     <div className=" rounded-b-full flex flex-wrap h-48 w-full gradient-three justify-center">
+     <div className=" rounded-full flex flex-wrap h-180 w-full gradient-three flex-col justify-center items-center ">
+        <h1 className=" font-bold m-5 text-2xl " >Brancheområderne</h1>
+        <div className="text-white bg-amber-500 rounded-base text-[20px] m-5 p-2" ><p>fødevarer, jordbrug og oplevelser</p></div>
+        <div className="text-white bg-amber-500 rounded-base text-[20px] m-5 p-2" ><p>kontor,handel og forretningsservice</p></div>
+        <div className="text-white bg-amber-500 rounded-base text-[20px] m-5 p-2" ><p>Teknologi, byggeri og transport </p></div>
+        <div className="text-white bg-amber-500 rounded-base text-[20px] m-5 p-2" ><p>Omsorg, sunhed og pædagogik </p></div>
+
 
      </div>
 
