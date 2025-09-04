@@ -1,0 +1,26 @@
+.main_page__background {
+	height: 1000vh;
+
+	/* color stops are easy to tweak via custom properties */
+	--orange: 245, 158, 11;
+	--teal: 20, 184, 166;
+
+	background-image: radial-gradient(50rem 50rem at 22% 15%,
+	rgba(var(--orange), 0.35) 5%,
+	rgba(var(--orange), 0.00) 90%),
+	radial-gradient(50rem 50rem at 78% 75%,
+					rgba(var(--teal), 0.35) 5%,
+					rgba(var(--teal), 0.00) 90%),
+	radial-gradient(50rem 50rem at 22% 115%,
+					rgba(var(--orange), 0.35) 5%,
+					rgba(var(--orange), 0.00) 90%),
+	radial-gradient(50rem 50rem at 78% -25%,
+					rgba(var(--teal), 0.35) 5%,
+					rgba(var(--teal), 0.00) 90%);
+
+	/* Repeat the whole pattern downwards */
+	--tile-h: 120rem;
+	background-size: 100% var(--tile-h);
+	background-repeat: repeat-y;
+	background-position: top center;
+}
