@@ -4,6 +4,7 @@ import React from "react"
 import {Abril_Fatface, DM_Sans, Open_Sans} from "next/font/google"
 import "@/style/gradient.css"
 import Navigation from "@/component/navigation"
+import Link from "next/link"
 
 const openSans = Open_Sans({
 	variable: "--font-open-sans",
@@ -40,15 +41,15 @@ export default function RootLayout({children}: Readonly<{ children: React.ReactN
 					<div className={"wrapper grid grid-cols-4 justify-between gap-10"}>
 						<ul className={"list-disc flex flex-col gap-2"}>
 							<li className={"list-none"}><h4 className={"text-2xl text-orange"}>Tag på opdagelse:</h4></li>
-							<li><a className={"hover:underline cursor-pointer"}>Jobkompasset</a></li>
-							<li><a className={"hover:underline cursor-pointer"}>Lærepladsen.dk</a></li>
-							<li><a className={"hover:underline cursor-pointer"}>UddannelsesGuiden</a></li>
+							<li><Link className={"hover:underline cursor-pointer"} href={"#"}>Jobkompasset</Link></li>
+							<li><Link className={"hover:underline cursor-pointer"} href={"#"}>Lærepladsen.dk</Link></li>
+							<li><Link className={"hover:underline cursor-pointer"} href={"#"}>UddannelsesGuiden</Link></li>
 						</ul>
 
 						<ul className={"list-disc flex flex-col gap-2"}>
 							<li className={"list-none"}><h4 className={"text-2xl text-orange"}>Links:</h4></li>
-							<li><a className={"hover:underline cursor-pointer"}>LinkedIn</a></li>
-							<li><a className={"hover:underline cursor-pointer"}>Cookiepolitik</a></li>
+							<li><Link className={"hover:underline cursor-pointer"} href={"#"}>LinkedIn</Link></li>
+							<li><Link className={"hover:underline cursor-pointer"} href={"#"}>Cookiepolitik</Link></li>
 						</ul>
 
 						<ul className={"flex flex-col gap-2"}>
@@ -58,7 +59,7 @@ export default function RootLayout({children}: Readonly<{ children: React.ReactN
 								lavet et projekt om vejen
 								til Erhvervsuddannelse:
 							</h4></li>
-							<li><a className={"hover:underline cursor-pointer"}>Klik her for at besøge "Vejen til EUD"</a></li>
+							<li><Link className={"hover:underline cursor-pointer"} href={"#"}>Klik her for at besøge "Vejen til EUD"</Link></li>
 						</ul>
 
 						<ul className={"flex flex-col gap-2"}>

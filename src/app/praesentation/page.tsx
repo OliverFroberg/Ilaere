@@ -2,6 +2,7 @@
 import Card from "@/component/card"
 import {AnimatePresence, motion} from "motion/react"
 import {useState} from "react"
+import Link from "next/link"
 
 export default function Page() {
 	const [isReadMoreOpen, setReadMoreOpen] = useState(false)
@@ -132,16 +133,16 @@ export default function Page() {
 						<p><span className="font-bold">Tlf:</span> +45 30 22 10 08</p>
 						<p>
 							<span className="font-bold">Email:</span>
-							<a
+							<Link
 								href="mailto:vibeke@campusdjursland.dk"
 								className="text-orange-400"
 							>
 								vibeke@campusdjursland.dk
-							</a>
+							</Link>
 						</p>
 						<p>
 							<span className="font-bold">Facebook:</span>
-							<a href="#" className="text-orange-400">Find os her</a>
+							<Link href="#" className="text-orange-400">Find os her</Link>
 						</p>
 					</div>
 				</div>
@@ -162,7 +163,7 @@ export default function Page() {
 					/>
 					<div className="p-4 bg-white">
 						<p className="font-semibold text-black mb-2">Café Kræmmerhuset</p>
-						<a href="#" className="text-blue-600 hover:underline no-underline">Læs mere</a>
+						<Link href="#" className="text-blue-600 hover:underline no-underline">Læs mere</Link>
 					</div>
 				</div>
 
@@ -175,7 +176,7 @@ export default function Page() {
 					/>
 					<div className="p-4 bg-white">
 						<p className="font-semibold text-black mb-2">Møllefisk & Havnens Røgeri</p>
-						<a href="#" className="text-blue-600 hover:underline no-underline">Læs mere</a>
+						<Link href="#" className="text-blue-600 hover:underline no-underline">Læs mere</Link>
 					</div>
 				</div>
 
@@ -188,7 +189,7 @@ export default function Page() {
 					/>
 					<div className="p-4 bg-white">
 						<p className="font-semibold text-black mb-2">Sølbakkegård A/S</p>
-						<a href="#" className="text-blue-600 no-underline hover:underline">Læs mere</a>
+						<Link href="#" className="text-blue-600 no-underline hover:underline">Læs mere</Link>
 					</div>
 				</div>
 

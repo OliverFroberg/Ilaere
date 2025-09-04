@@ -1,5 +1,6 @@
 import Card from "@/component/card"
 import "@/style/mainpage.css"
+import Link from "next/link"
 
 export default function Home() {
 	const StudentBubble = ({src}: { src: string }) => (
@@ -82,11 +83,11 @@ export default function Home() {
 				<div className={"absolute top-0 left-0 w-full h-full rounded-full gradient-three -z-1 scale-150 mobile:scale-100"}/>
 				<div className={"flex flex-col gap-4 justify-center items-center text-center mx-auto max-w-100 w-full h-full"}>
 					<h1 className="font-bold text-[1.5em]">Brancheområderne</h1>
-					<a className="text-white rounded-base bg-orange w-full p-2 cursor-pointer hover:shadow-lg transition">fødevarer, jordbrug og oplevelser</a>
-					<a className="text-white rounded-base bg-orange w-full p-2 cursor-pointer hover:shadow-lg transition">kontor,handel og
-						forretningsservice</a>
-					<a className="text-white rounded-base bg-orange w-full p-2 cursor-pointer hover:shadow-lg transition">Teknologi, byggeri og transport </a>
-					<a className="text-white rounded-base bg-orange w-full p-2 cursor-pointer hover:shadow-lg transition">Omsorg, sunhed og pædagogik</a>
+					<Link href={"#"} className="text-white rounded-base bg-orange w-full p-2 cursor-pointer hover:shadow-lg transition">fødevarer, jordbrug og oplevelser</Link>
+					<Link href={"#"} className="text-white rounded-base bg-orange w-full p-2 cursor-pointer hover:shadow-lg transition">kontor,handel og
+						forretningsservice</Link>
+					<Link href={"#"} className="text-white rounded-base bg-orange w-full p-2 cursor-pointer hover:shadow-lg transition">Teknologi, byggeri og transport </Link>
+					<Link href={"#"} className="text-white rounded-base bg-orange w-full p-2 cursor-pointer hover:shadow-lg transition">Omsorg, sunhed og pædagogik</Link>
 				</div>
 			</section>
 
@@ -110,7 +111,7 @@ export default function Home() {
 					/>
 				</div>
 
-				<a href="#" className={"underline underline-offset-2 self-end"}>« Gamle poster</a>
+				<Link href={"#"} className={"underline underline-offset-2 self-end"}>« Gamle poster</Link>
 			</section>
 
 			<section className="grid grid-cols-1 tablet:grid-cols-2 desktop:grid-rows-4 justify-center gap-16 [direction:ltr]">
@@ -132,7 +133,7 @@ export default function Home() {
 					/>
 				</div>
 
-				<a href="#" className={"underline underline-offset-2 self-end tablet:col-span-2 desktop:col-span-1 tablet:[direction:rtl] desktop:[direction:ltr]"}>« Gamle poster</a>
+				<Link href={"#"} className={"underline underline-offset-2 self-end tablet:col-span-2 desktop:col-span-1 tablet:[direction:rtl] desktop:[direction:ltr]"}>« Gamle poster</Link>
 			</section>
 
 			<section className="grid grid-cols-1 tablet:grid-cols-2 desktop:grid-rows-4 justify-center gap-16 [direction:rtl]">
@@ -154,7 +155,7 @@ export default function Home() {
 					/>
 				</div>
 
-				<a href="#" className={"underline underline-offset-2 self-end"}>« Gamle poster</a>
+				<Link href={"#"} className={"underline underline-offset-2 self-end"}>« Gamle poster</Link>
 			</section>
 
 			<section className="grid grid-cols-1 tablet:grid-cols-2 desktop:grid-rows-4 justify-center gap-16 [direction:ltr]">
@@ -176,7 +177,7 @@ export default function Home() {
 					/>
 				</div>
 
-				<a href="#" className={"underline underline-offset-2 self-end tablet:col-span-2 desktop:col-span-1 tablet:[direction:rtl] desktop:[direction:ltr]"}>« Gamle poster</a>
+				<Link href={"#"} className={"underline underline-offset-2 self-end tablet:col-span-2 desktop:col-span-1 tablet:[direction:rtl] desktop:[direction:ltr]"}>« Gamle poster</Link>
 			</section>
 		</main>
 	)
@@ -190,7 +191,7 @@ function CardContainer({title, description, link, image}: { title: string, image
 				<div className={"p-4"}>
 					<p className={"font-semibold text-lg"}>{title}</p>
 					<p>{description}</p>
-					<a href={link} className="text-orange">læs mere</a>
+					<Link href={link} className="text-orange">læs mere</Link>
 				</div>
 			</div>
 		</Card>

@@ -6,6 +6,7 @@ import {useMediaQuery} from "@/component/utils"
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome"
 import {faBars, faClose} from "@fortawesome/free-solid-svg-icons"
 import {AnimatePresence, motion} from "motion/react"
+import Link from "next/link"
 
 export default function Navigation() {
 	const isDesktop = useMediaQuery("(min-width: 1024px)")
@@ -13,10 +14,10 @@ export default function Navigation() {
 
 	const NavButtons = ({href, text}: { href: string, text: string }) => (
 		<li className={"w-full text-center"}>
-			<a href={href} className={
+			<Link href={href} className={
 				"hover:bg-black/5 hover:shadow-lg px-4 py-2 rounded-2xl underline underline-offset-2 transition inline-block " +
 				`${!isDesktop && "w-full"}`
-			}>{text}</a>
+			}>{text}</Link>
 		</li>
 	)
 
@@ -33,8 +34,8 @@ export default function Navigation() {
 	return (
 		<nav className={"z-10"}>
 			<div className={"flex gap-10 tablet:gap-4 justify-between items-center py-4"}>
-				<a href="/" className={"w-full max-w-100 shadow-lg hover:shadow-xl hover:scale-105 transition"}><img src="/ilaere.dk-logo.png"
-																													 alt="ilære.dk logo"/></a>
+				<Link href="/" className={"w-full max-w-100 shadow-lg hover:shadow-xl hover:scale-105 transition"}><img src="/ilaere.dk-logo.png"
+																													 alt="ilære.dk logo"/></Link>
 				{isDesktop ? (
 					<Card>
 						<ul className={"flex justify-center items-center h-full px-4 py-2 whitespace-nowrap"}>
