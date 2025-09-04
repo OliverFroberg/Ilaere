@@ -1,19 +1,14 @@
-
-
-
-
-
-
-.gradient-one{
-background: #FF943F;
-background: linear-gradient(90deg, rgba(255, 148, 63, 1) 0%, rgba(83, 193, 183, 1) 100%);
+.gradient-one {
+	background: #FF943F;
+	background: linear-gradient(90deg, rgba(255, 148, 63, 1) 0%, rgba(83, 193, 183, 1) 100%);
 }
 
-.gradient-two{
-background: #53C1B7;
-background: linear-gradient(90deg, rgba(83, 193, 183, 1) 0%, rgba(255, 147, 60, 1) 100%);
+.gradient-two {
+	background: #53C1B7;
+	background: linear-gradient(90deg, rgba(83, 193, 183, 1) 0%, rgba(255, 147, 60, 1) 100%);
 }
-.gradient-three{
-    background: #5FBEAF;
-background: linear-gradient(90deg, rgba(95, 190, 175, 1) 0%, rgba(255, 194, 144, 1) 100%);
+
+.gradient-three {
+	background: #5FBEAF;
+	background: linear-gradient(90deg, rgba(95, 190, 175, 1) 0%, rgba(255, 194, 144, 1) 100%);
 }

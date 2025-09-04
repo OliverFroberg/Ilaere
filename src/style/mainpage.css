@@ -1,7 +1,4 @@
 .main_page__background {
-	height: 1000vh;
-
-	/* color stops are easy to tweak via custom properties */
 	--orange: 245, 158, 11;
 	--teal: 20, 184, 166;
 
@@ -18,7 +15,6 @@
 					rgba(var(--teal), 0.35) 5%,
 					rgba(var(--teal), 0.00) 90%);
 
-	/* Repeat the whole pattern downwards */
 	--tile-h: 120rem;
 	background-size: 100% var(--tile-h);
 	background-repeat: repeat-y;

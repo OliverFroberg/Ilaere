@@ -1,9 +1,5 @@
 @import "tailwindcss";
 
-:root {
-	--background: #ffffff;
-}
-
 @theme inline {
 	--color-background: var(--background);
 	--color-foreground: var(--foreground);
@@ -12,26 +8,18 @@
 	--font-dm-sans: var(--font-dm-sans);
 
 	--color-base-white: #eee;
-	--color-nav: #ff7200;
-	--color-header: #ffffff;
-	--color-nav-hover: #e97416;
-	--color-footer-text: #ff7300;
-	--color-text: #000000;
-	--color-teal: #00a595;
+	--color-hero-title: #FF943F;
+	--color-orange: #ef9950;
 
 	--radius-base: 30px;
 
-	--breakpoint-mobile: 768px;
-	--breakpoint-tablet: 1024px;
-	--breakpoint-desktop: 1280px;
+	--breakpoint-mobile: 480px;
+	--breakpoint-tablet: 768px;
+	--breakpoint-desktop: 1024px;
 
 	--max-width-wrapper: 1280px;
 }
 
-body {
-	background: var(--background);
-}
-
 .wrapper {
-	@apply max-w-wrapper mx-auto;
+	@apply max-w-wrapper mx-auto p-8;
 }
