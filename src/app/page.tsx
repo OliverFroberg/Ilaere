@@ -1,9 +1,8 @@
-import Image from "next/image";
+import "@/style/mainpage.css"
 
 export default function Home() {
-  return (
-
-   <main>
+	return (
+		<main className={"wrapper"}>
      <h1>Welcome to the Home Page</h1>
      <div className="container m-auto w-auto h-auto ">
 

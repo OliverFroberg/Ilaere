@@ -1,0 +1,29 @@
+@import "tailwindcss";
+
+:root {
+	--background: #ffffff;
+}
+
+@theme inline {
+	--color-background: var(--background);
+	--color-foreground: var(--foreground);
+	--font-sans: var(--font-open-sans);
+
+	--color-base-white: #eee;
+
+	--radius-base: 30px;
+
+	--breakpoint-mobile: 768px;
+	--breakpoint-tablet: 1024px;
+	--breakpoint-desktop: 1280px;
+
+	--max-width-wrapper: 1280px;
+}
+
+body {
+	background: var(--background);
+}
+
+.wrapper {
+	@apply max-w-wrapper mx-auto;
+}
