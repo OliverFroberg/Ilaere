@@ -38,7 +38,7 @@ export default function RootLayout({children}: Readonly<{ children: React.ReactN
 				{children}
 
 				<footer className={"bg-stone-900 text-white"}>
-					<div className={"wrapper grid grid-cols-4 justify-between gap-10"}>
+					<div className={"wrapper grid tablet:grid-cols-4 justify-between gap-10"}>
 						<ul className={"list-disc flex flex-col gap-2"}>
 							<li className={"list-none"}><h4 className={"text-2xl text-orange"}>Tag på opdagelse:</h4></li>
 							<li><Link className={"hover:underline cursor-pointer"} href={"#"}>Jobkompasset</Link></li>

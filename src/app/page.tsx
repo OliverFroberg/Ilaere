@@ -96,7 +96,7 @@ export default function Home() {
 				<h2 className="text-center self-center text-2xl font-bold font-abril-fatface tablet:col-span-2 desktop:col-span-1">Fødevarer, jordbrug og oplevelser</h2>
 
 				<div className={"desktop:row-span-2 [direction:ltr]"}>
-					<CardContainer title="Campus Djursland" description="Castronom, fødevarer, jordbrug og oplevelser" link="#"
+					<CardContainer title="Campus Djursland" description="Castronom, fødevarer, jordbrug og oplevelser" link="/praesentation"
 								   image="/image/mediegrafikerelev_viden_djurs_ilaere_elevplads_erhvervsuddannelser_djursland_billede3.webp"
 					/>
 				</div>
